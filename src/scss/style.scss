@@ -1,0 +1,141 @@
+@import "null";
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.development {
+  font-family: 'Open Sans', sans-serif;
+  padding: 36px 50px;
+  @media (max-width: 830px) {
+    padding: 20px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #45852D;
+    margin: 0 0 43px 0;
+  }
+}
+
+.filter {
+  margin: 0 0 45px 0;
+  &__label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #363636;
+    margin: 0 10px 0 0;
+  }
+  &__input {
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 25px;
+    min-height: 50px;
+    min-width: 418px;
+    font-size: 16px;
+    padding: 0 10px;
+    @media (max-width: 590px) {
+      min-width: 80%;
+    }
+
+  }
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -11px;
+  &__item {
+    flex: 0 1 33.333%;
+    padding: 0 11px;
+    margin: 0 0 38px 0;
+    @media (max-width: 830px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 590px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__btn {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    & button {
+      display: flex;
+      align-items: center;
+      border: 1px solid #D8D8D8;
+      border-radius: 25px;
+      padding: 12px 33px;
+      background-color: #FFFFFF;
+
+      font-weight: bold;
+      font-size: 16px;
+      color: #363636;
+      & i {
+        margin-left: 7px;
+        height: 14px;
+        width: 14px;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.card {
+  display: block;
+  height: 100%;
+  background: #F8F8F8;
+  border: 1px solid #D8D8D8;
+  &__top {
+    min-height: 233px;
+    background-color: #45852D;
+    position: relative;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    padding: 8px 10px;
+    background-color: #006F79;
+
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  &__bottom {
+    padding: 15px 20px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #363636;
+    margin: 0 0 2px 0;
+  }
+  &__text {
+    display: block;
+    margin: 0 0 7px 0;
+    font-size: 14px;
+    &_first {
+      margin: 0 0 15px 0;
+    }
+    &_bold {
+      font-weight: 700;
+    }
+  }
+}
